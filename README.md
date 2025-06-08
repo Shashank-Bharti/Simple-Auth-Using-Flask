@@ -41,10 +41,8 @@ Before running the application, you need to configure the email settings for sen
 
 1. Open `main.py` in your editor
 2. Locate lines 189-190 containing the email configuration:
-```python
-sender_email = "smtp.testpersonal2004@gmail.com"
-sender_password = "hikwecnpzjlcgiyt"
-```
+
+
 3. Replace these values with your own email address and app password:
    - For Gmail users, you'll need to create an "App Password" in your Google Account settings
    - Go to your Google Account → Security → 2-Step Verification → App passwords
