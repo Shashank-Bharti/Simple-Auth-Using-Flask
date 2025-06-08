@@ -187,8 +187,8 @@ def add_no_cache_headers(response):
     return resp
 
 def send_email(to, otp, name):
-    sender_email = "smtp.testpersonal2004@gmail.com"
-    sender_password = "hikwecnpzjlcgiyt"
+    sender_email = "your email"
+    sender_password = "Your password"
     subject = "Your OTP Code"
     body = f"Hi {name},\nYour OTP code is: {otp}"
     message = f"Subject: {subject}\n\n{body}"
