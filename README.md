@@ -22,7 +22,7 @@ A simple Flask-based authentication system using One-Time Passwords (OTP) sent v
 
 1. Clone the repository:
 ```
-git clone https://github.com/yourusername/flask-otp-auth.git
+https://github.com/Shashank-Bharti/Simple-Auth-Using-Flask.git
 ```
 
 2. Navigate to the project directory:
