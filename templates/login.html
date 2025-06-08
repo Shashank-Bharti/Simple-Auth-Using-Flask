@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head><title>Login</title></head>
+<body>
+  <h1>Login</h1>
+  {% with messages = get_flashed_messages() %}
+    {% if messages %}
+      {% for msg in messages %}
+        <p>{{ msg }}</p>
+      {% endfor %}
+    {% endif %}
+  {% endwith %}
+
+  <form method="post">
+    {{ form.hidden_tag() }}
+    {{ form.email.label }} {{ form.email() }}<br>
+    {{ form.submit() }}
+  </form>
+
+  {% if show_otp %}
+    <form method="post" action="{{ url_for('verify_login') }}">
+      {{ otp_form.hidden_tag() }}
+      {{ otp_form.email() }}
+      {{ otp_form.otp.label }} {{ otp_form.otp() }}<br>
+      {{ otp_form.submit() }}
+    </form>
+  {% endif %}
+</body>
+</html>

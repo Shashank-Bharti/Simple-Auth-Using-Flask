@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head><title>Dashboard</title></head>
+<body>
+  <h1>Welcome, {{ user.name }}</h1>
+  <a href="{{ url_for('logout') }}">Logout</a>
+  <ul>
+    <li><a href="{{ url_for('page', n=1) }}">Page 1</a></li>
+    <li><a href="{{ url_for('page', n=2) }}">Page 2</a></li>
+    <li><a href="{{ url_for('page', n=3) }}">Page 3</a></li>
+    <li><a href="{{ url_for('page', n=4) }}">Page 4</a></li>
+    <li><a href="{{ url_for('page', n=5) }}">Page 5</a></li>
+  </ul>
+</body>
+</html>
